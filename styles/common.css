@@ -29,8 +29,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #333;
   color: #cbcc97;
-  font-size: 3em;
-  padding: 0 .5em;
+  font-size: 5vh;
+  padding: 0 1vw;
   margin: 0;
   letter-spacing: .5px;
 }
@@ -48,7 +48,8 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-around;
   width: 100%;
   background-color: #e5dac1;
@@ -113,4 +114,48 @@ body {
 
 .copyright p {
   text-align: center;
+}
+
+.mobile-seal {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: inline;
+    text-align: center;
+    margin: 1vh 0;
+    width: 80vw;
+  }
+
+  .header .seal {
+    display: none;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .content img {
+    height: 30vh;
+  }
+  .mobile-seal {
+    display: inline;
+  }
+  
+  #seal {
+    height: 30vw;
+  }
+
+  .nav {
+    grid-template-areas: 
+    ' . . . '
+    ' . . . ';
+  }
+
+  .nav-link {
+    width: fit-content;
+    justify-self: center;
+  }
 }
