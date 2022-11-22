@@ -99,11 +99,21 @@ body {
 }
 
 .content img {
-  height: 50vh;
+  height: 75vh;
   float: right;
   border: 1px solid #333;
   margin: 0 .5em 0 1.5em;
 }
+
+.sidebyside {
+  margin: 5vh;
+  display: flex;
+}
+
+.infoside h1 {
+  margin-left: 4vw;
+}
+
 
 .contact{
   text-align: center;
@@ -144,6 +154,16 @@ body {
 
   .content img {
     height: 45vw;
+  }
+
+  .sidebyside {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .imageside img {
+    height: auto;
+    width: 100%;
   }
 
   .mobile-seal {
