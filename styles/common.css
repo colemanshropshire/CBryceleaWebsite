@@ -7,6 +7,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: #993300;
+}
+
 .header{
   margin: 1.5vh 0;
   display: flex;
